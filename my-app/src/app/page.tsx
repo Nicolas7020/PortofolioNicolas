@@ -1,5 +1,25 @@
 import Image from "next/image";
 import SequentialType from "@/components/SequentialType";
+import LogoLoop from "@/components/LogoLoop";
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiPython, SiPostgresql, SiMongodb, SiGraphql, SiAmazon, SiDocker, SiGit, SiVercel, SiFigma } from 'react-icons/si';
+
+// Tech logos for the animation
+const techLogos = [
+  { node: <SiReact className="text-blue-500" />, title: "React", href: "https://react.dev" },
+  { node: <SiNextdotjs className="text-black dark:text-white" />, title: "Next.js", href: "https://nextjs.org" },
+  { node: <SiTypescript className="text-blue-600" />, title: "TypeScript", href: "https://www.typescriptlang.org" },
+  { node: <SiTailwindcss className="text-cyan-500" />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
+  { node: <SiNodedotjs className="text-green-600" />, title: "Node.js", href: "https://nodejs.org" },
+  { node: <SiPython className="text-yellow-500" />, title: "Python", href: "https://python.org" },
+  { node: <SiPostgresql className="text-blue-700" />, title: "PostgreSQL", href: "https://postgresql.org" },
+  { node: <SiMongodb className="text-green-500" />, title: "MongoDB", href: "https://mongodb.com" },
+  { node: <SiGraphql className="text-pink-600" />, title: "GraphQL", href: "https://graphql.org" },
+  { node: <SiAmazon className="text-orange-500" />, title: "AWS", href: "https://aws.amazon.com" },
+  { node: <SiDocker className="text-blue-500" />, title: "Docker", href: "https://docker.com" },
+  { node: <SiGit className="text-red-500" />, title: "Git", href: "https://git-scm.com" },
+  { node: <SiVercel className="text-black dark:text-white" />, title: "Vercel", href: "https://vercel.com" },
+  { node: <SiFigma className="text-purple-500" />, title: "Figma", href: "https://figma.com" },
+];
 
 export default function Home() {
   return (
@@ -142,9 +162,21 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className="relative h-24 overflow-hidden mt-20">
+            <LogoLoop
+              logos={techLogos}
+              speed={60}
+              direction="left"
+              logoHeight={48}
+              gap={48}
+              pauseOnHover
+              scaleOnHover
+              ariaLabel="Technology stack"
+            />
+          </div>
         </div>
+        
       </section>
-
       {/* Projects Section */}
       <section id="projects" className="py-20 bg-slate-50 dark:bg-slate-900">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
