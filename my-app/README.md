@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nicolas Portfolio Website
+
+A modern, responsive portfolio website built with Next.js 15 and Tailwind CSS v4.
+
+## Features
+
+- 🎨 **Modern Design**: Clean, professional design with a sophisticated color scheme
+- 📱 **Fully Responsive**: Optimized for all device sizes using Tailwind CSS breakpoints
+- 🌙 **Dark Mode**: Automatic dark/light mode based on system preference
+- ⚡ **Fast Performance**: Built with Next.js 15 for optimal loading speeds
+- 🎯 **Single Page**: Smooth scrolling navigation between sections
+- ✨ **Typing Animation**: Eye-catching typewriter effect for the hero section
+- 📄 **CV Download**: Downloadable resume in PDF format
+- 💌 **Contact Form**: Interactive contact form for potential clients/employers
+
+## Sections
+
+1. **Introduction**: Hero section with photo, name, and brief introduction
+2. **Experience**: Work history, skills, and technical expertise
+3. **Projects**: Showcase of featured projects with descriptions and links
+4. **Contact**: Contact information and message form
+5. **CV**: Resume download and preview functionality
+
+## Technology Stack
+
+- **Framework**: Next.js 15
+- **Styling**: Tailwind CSS v4
+- **Language**: TypeScript
+- **Icons**: Emoji-based icons for better compatibility
+- **Deployment**: Ready for Vercel, Netlify, or any static hosting
+
+## Color Scheme
+
+The portfolio uses a professional color palette:
+- **Primary**: Blue (#3b82f6) for buttons and accents
+- **Background**: Slate variants for sections
+- **Text**: Proper contrast ratios for accessibility
+- **Dark Mode**: Automatic switching with appropriate contrast
 
 ## Getting Started
 
-First, run the development server:
+1. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Open your browser**:
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Personal Information
+Update the following in `src/app/page.tsx`:
+- Name and title in the hero section
+- Contact information (email, phone, location)
+- Work experience details
+- Skills and technologies
+- Project descriptions and links
+- Social media links
 
-## Learn More
+### Styling
+- Modify colors in the Tailwind classes
+- Update the CSS variables in `src/app/globals.css`
+- Add custom animations or effects
 
-To learn more about Next.js, take a look at the following resources:
+### CV/Resume
+- Replace `public/nicolas-cv.pdf` with your actual resume
+- Update the CV section content
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Vercel (Recommended)
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Deploy automatically
 
-## Deploy on Vercel
+### Other Platforms
+The site is a static export compatible with:
+- Netlify
+- GitHub Pages
+- AWS S3
+- Any static hosting service
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Performance Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- ✅ Optimized images with Next.js Image component
+- ✅ Responsive design with proper breakpoints
+- ✅ Semantic HTML for accessibility
+- ✅ Fast loading with static generation
+- ✅ SEO-friendly structure
+
+## Browser Support
+
+- ✅ Chrome (latest)
+- ✅ Firefox (latest)
+- ✅ Safari (latest)
+- ✅ Edge (latest)
+- ✅ Mobile browsers
+
+## License
+
+This project is open source and available under the MIT License.
+
+---
+
+Built with ❤️ using Next.js and Tailwind CSS
