@@ -308,24 +308,8 @@ export const LogoLoop = React.memo<LogoLoopProps>(
           ? ((item as any).ariaLabel ?? (item as any).title)
           : ((item as any).alt ?? (item as any).title);
 
-        const inner = (item as any).href ? (
-          <a
-            className={cx(
-              'inline-flex items-center no-underline rounded',
-              'transition-opacity duration-200 ease-linear',
-              'hover:opacity-80',
-              'focus-visible:outline focus-visible:outline-current focus-visible:outline-offset-2'
-            )}
-            href={(item as any).href}
-            aria-label={itemAriaLabel || 'logo link'}
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            {content}
-          </a>
-        ) : (
-          content
-        );
+        // Remove href functionality - icons are no longer clickable
+        const inner = content;
 
         return (
           <li
