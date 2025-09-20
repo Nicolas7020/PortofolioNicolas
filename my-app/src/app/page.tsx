@@ -144,14 +144,6 @@ export default function Home() {
                         Previously served as Coordinator of Fundraising and Publication Marketing Activist.
                       </p>
                     </div>
-                    <div className="border-l-4 border-blue-500 pl-6 hover:border-blue-600 transition-colors duration-300 hover-lift">
-                      <h4 className="text-xl font-semibold text-slate-900 dark:text-white">ICPC Escort</h4>
-                      <p className="text-blue-600 dark:text-blue-400 font-medium">International Collegiate Programming Contest • 2024</p>
-                      <p className="text-slate-600 dark:text-slate-400 mt-2">
-                        Guided 5+ international programming contest participants using bilingual English-Mandarin communication. 
-                        Provided cross-cultural support across 2-day competition schedule.
-                      </p>
-                    </div>
                   </div>
                 </div>
               </AnimatedSection>
@@ -366,20 +358,7 @@ export default function Home() {
                       Get a comprehensive overview of my experience, education, and skills in a downloadable PDF format. 
                       My resume includes detailed information about my professional journey, technical expertise, and achievements.
                     </p>
-                    <div className="space-y-3">
-                      <div className="flex items-center space-x-3 text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                        <span className="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></span>
-                        <span>5+ years of professional experience</span>
-                      </div>
-                      <div className="flex items-center space-x-3 text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                        <span className="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></span>
-                        <span>Full-stack development expertise</span>
-                      </div>
-                      <div className="flex items-center space-x-3 text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                        <span className="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></span>
-                        <span>Education and certifications</span>
-                      </div>
-                    </div>
+              
                   </div>
                   <div className="flex flex-col space-y-4">
                     <a 
