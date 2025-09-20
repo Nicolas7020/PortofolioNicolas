@@ -89,7 +89,7 @@ export default function ProjectSlider({
               key={index} 
               className="w-full flex-shrink-0 px-2 md:px-4"
             >
-              <div className="max-w-md mx-auto">
+              <div className="max-w-lg mx-auto">
                 <ProjectCard
                   title={project.title}
                   description={project.description}

@@ -19,7 +19,7 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group hover:-translate-y-1">
-      <div className={`h-48 ${gradient} relative overflow-hidden`}>
+      <div className={`h-64 ${gradient} relative overflow-hidden`}>
         <img 
           src={imageUrl} 
           alt={title}
@@ -27,12 +27,12 @@ export default function ProjectCard({
         />
         <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors duration-300"></div>
       </div>
-      <div className="p-6">
-        <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">{title}</h3>
-        <p className="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
+      <div className="p-8">
+        <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-3">{title}</h3>
+        <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed text-base">
           {description}
         </p>
-        <div className="flex flex-wrap gap-2 mb-4">
+        <div className="flex flex-wrap gap-2 mb-6">
           {technologies.map((tech, index) => (
             <span 
               key={index}
