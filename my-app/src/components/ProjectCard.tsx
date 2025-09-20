@@ -2,7 +2,7 @@ interface ProjectCardProps {
   title: string;
   description: string;
   technologies: string[];
-  icon: string;
+  imageUrl: string;
   liveUrl?: string;
   githubUrl?: string;
   gradient: string;
@@ -12,17 +12,20 @@ export default function ProjectCard({
   title,
   description,
   technologies,
-  icon,
+  imageUrl,
   liveUrl,
   githubUrl,
   gradient
 }: ProjectCardProps) {
   return (
     <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group hover:-translate-y-1">
-      <div className={`h-48 ${gradient} flex items-center justify-center`}>
-        <div className="text-white text-4xl group-hover:scale-110 transition-transform duration-300">
-          {icon}
-        </div>
+      <div className={`h-48 ${gradient} relative overflow-hidden`}>
+        <img 
+          src={imageUrl} 
+          alt={title}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+        />
+        <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors duration-300"></div>
       </div>
       <div className="p-6">
         <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">{title}</h3>

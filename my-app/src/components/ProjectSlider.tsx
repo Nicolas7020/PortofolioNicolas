@@ -8,7 +8,7 @@ interface Project {
   title: string;
   description: string;
   technologies: string[];
-  icon: string;
+  imageUrl: string;
   liveUrl?: string;
   githubUrl?: string;
   gradient: string;
@@ -94,7 +94,7 @@ export default function ProjectSlider({
                   title={project.title}
                   description={project.description}
                   technologies={project.technologies}
-                  icon={project.icon}
+                  imageUrl={project.imageUrl}
                   liveUrl={project.liveUrl}
                   githubUrl={project.githubUrl}
                   gradient={project.gradient}

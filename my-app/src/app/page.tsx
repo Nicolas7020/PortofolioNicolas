@@ -4,21 +4,26 @@ import LogoLoop from "@/components/LogoLoop";
 import AnimatedSection from "@/components/AnimatedSection";
 import ProjectSlider from "@/components/ProjectSlider";
 import { projects } from "@/data/projects";
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiPython, SiPostgresql, SiMongodb, SiGraphql, SiAmazon, SiDocker, SiGit, SiVercel, SiFigma } from 'react-icons/si';
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiPython, SiPostgresql, SiMongodb, SiGraphql, SiAmazon, SiDocker, SiGit, SiVercel, SiFigma, SiExpress, SiFlask, SiStreamlit, SiTensorflow, SiScikitlearn, SiHtml5, SiCss3, SiJavascript } from 'react-icons/si';
 
 // Tech logos for the animation
 const techLogos = [
   { node: <SiReact className="text-blue-500" />, title: "React", href: "https://react.dev" },
   { node: <SiNextdotjs className="text-black dark:text-white" />, title: "Next.js", href: "https://nextjs.org" },
   { node: <SiTypescript className="text-blue-600" />, title: "TypeScript", href: "https://www.typescriptlang.org" },
+  { node: <SiJavascript className="text-yellow-500" />, title: "JavaScript", href: "https://javascript.info" },
+  { node: <SiHtml5 className="text-orange-600" />, title: "HTML5", href: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
+  { node: <SiCss3 className="text-blue-500" />, title: "CSS3", href: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
   { node: <SiTailwindcss className="text-cyan-500" />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
   { node: <SiNodedotjs className="text-green-600" />, title: "Node.js", href: "https://nodejs.org" },
+  { node: <SiExpress className="text-gray-700 dark:text-gray-300" />, title: "Express.js", href: "https://expressjs.com" },
   { node: <SiPython className="text-yellow-500" />, title: "Python", href: "https://python.org" },
+  { node: <SiFlask className="text-black dark:text-white" />, title: "Flask", href: "https://flask.palletsprojects.com" },
+  { node: <SiStreamlit className="text-red-500" />, title: "Streamlit", href: "https://streamlit.io" },
   { node: <SiPostgresql className="text-blue-700" />, title: "PostgreSQL", href: "https://postgresql.org" },
   { node: <SiMongodb className="text-green-500" />, title: "MongoDB", href: "https://mongodb.com" },
-  { node: <SiGraphql className="text-pink-600" />, title: "GraphQL", href: "https://graphql.org" },
-  { node: <SiAmazon className="text-orange-500" />, title: "AWS", href: "https://aws.amazon.com" },
-  { node: <SiDocker className="text-blue-500" />, title: "Docker", href: "https://docker.com" },
+  { node: <SiTensorflow className="text-orange-500" />, title: "TensorFlow", href: "https://tensorflow.org" },
+  { node: <SiScikitlearn className="text-orange-600" />, title: "Scikit-learn", href: "https://scikit-learn.org" },
   { node: <SiGit className="text-red-500" />, title: "Git", href: "https://git-scm.com" },
   { node: <SiVercel className="text-black dark:text-white" />, title: "Vercel", href: "https://vercel.com" },
   { node: <SiFigma className="text-purple-500" />, title: "Figma", href: "https://figma.com" },
@@ -32,7 +37,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="text-xl font-bold text-slate-900 dark:text-white transition-colors duration-300 hover:text-blue-600 dark:hover:text-blue-400">
-              Nicolas Portfolio
+              Nicolas Maulana SS
             </div>
             <div className="hidden md:flex space-x-8">
               <a href="#about" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 hover:scale-105 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full">About</a>
@@ -53,9 +58,9 @@ export default function Home() {
               <SequentialType className="block" />
               <div className="fade-in-up animate-delay-300">
                 <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
-                  I'm passionate about creating innovative solutions and building scalable applications. 
-                  With expertise in modern web technologies, I enjoy turning complex problems into 
-                  simple, beautiful designs.
+                  5th Semester Computer Science - Software Engineering Student at BINUS University. Passionate Full Stack Developer & AI Enthusiast 
+                  with hands-on experience in both frontend and backend technologies. Active member of HIMTI, campus event organizer, and Freshmen Partner. 
+                  Always eager to learn new technologies and solve real-world problems through innovative solutions.
                 </p>
               </div>
               <div className="fade-in-up animate-delay-500">
@@ -78,8 +83,15 @@ export default function Home() {
             <AnimatedSection className="flex-1 flex justify-center" animation="fade-in-right" delay={200}>
               <div className="relative hover:scale-105 transition-transform duration-500">
                 <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-blue-400 to-purple-600 p-2 hover:shadow-2xl transition-shadow duration-300">
-                  <div className="w-full h-full rounded-full bg-slate-200 dark:bg-slate-700 flex items-center justify-center hover:bg-slate-100 dark:hover:bg-slate-600 transition-colors duration-300">
-                    <div className="text-6xl hover:scale-110 transition-transform duration-300">👨‍💻</div>
+                  <div className="w-full h-full rounded-full overflow-hidden">
+                    <Image
+                      src="/prof1.jpg"
+                      alt="Nicolas Profile Picture"
+                      width={384}
+                      height={384}
+                      className="w-full h-full object-cover rounded-full hover:scale-110 transition-transform duration-300"
+                      priority
+                    />
                   </div>
                 </div>
               </div>
@@ -94,10 +106,10 @@ export default function Home() {
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white mb-4">
-                Experience & Skills
+                Education & Experience
               </h2>
               <p className="text-xl text-slate-600 dark:text-slate-300">
-                My professional journey and technical expertise
+                My academic journey and organizational involvement
               </p>
             </div>
 
@@ -105,30 +117,38 @@ export default function Home() {
               {/* Work Experience */}
               <AnimatedSection animation="fade-in-left" delay={200}>
                 <div>
-                  <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-8">Work Experience</h3>
+                  <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-8">Education & Organization</h3>
                   <div className="space-y-8">
                     <div className="border-l-4 border-blue-500 pl-6 hover:border-blue-600 transition-colors duration-300 hover-lift">
-                      <h4 className="text-xl font-semibold text-slate-900 dark:text-white">Senior Software Engineer</h4>
-                      <p className="text-blue-600 dark:text-blue-400 font-medium">Tech Company • 2022 - Present</p>
+                      <h4 className="text-xl font-semibold text-slate-900 dark:text-white">Bachelor in Computer Science</h4>
+                      <p className="text-blue-600 dark:text-blue-400 font-medium">BINUS University • 2023 - Present</p>
                       <p className="text-slate-600 dark:text-slate-400 mt-2">
-                        Led development of scalable web applications using React, Node.js, and cloud technologies. 
-                        Mentored junior developers and improved team productivity by 30%.
+                        Software Engineering student with strong technical foundations in full stack development. 
+                        Currently in fifth semester with hands-on experience in academic and personal projects.
                       </p>
                     </div>
                     <div className="border-l-4 border-blue-500 pl-6 hover:border-blue-600 transition-colors duration-300 hover-lift">
-                      <h4 className="text-xl font-semibold text-slate-900 dark:text-white">Full Stack Developer</h4>
-                      <p className="text-blue-600 dark:text-blue-400 font-medium">Startup Inc • 2020 - 2022</p>
+                      <h4 className="text-xl font-semibold text-slate-900 dark:text-white">Freshmen Partner</h4>
+                      <p className="text-blue-600 dark:text-blue-400 font-medium">BINUS University • Sep 2024 - May 2025</p>
                       <p className="text-slate-600 dark:text-slate-400 mt-2">
-                        Built and maintained multiple client applications using modern JavaScript frameworks. 
-                        Collaborated with design teams to create user-friendly interfaces.
+                        Provided guidance to first-year students, helping them navigate and adapt to university life over the course of one year. 
+                        Focused on supporting their academic and personal development, ensuring a smooth transition into higher education.
                       </p>
                     </div>
                     <div className="border-l-4 border-blue-500 pl-6 hover:border-blue-600 transition-colors duration-300 hover-lift">
-                      <h4 className="text-xl font-semibold text-slate-900 dark:text-white">Junior Developer</h4>
-                      <p className="text-blue-600 dark:text-blue-400 font-medium">Web Agency • 2019 - 2020</p>
+                      <h4 className="text-xl font-semibold text-slate-900 dark:text-white">Activist</h4>
+                      <p className="text-blue-600 dark:text-blue-400 font-medium">HIMTI • Jan 2024 - Present</p>
                       <p className="text-slate-600 dark:text-slate-400 mt-2">
-                        Developed responsive websites and learned modern development practices. 
-                        Gained experience in agile methodologies and client communication.
+                        Developed digital infrastructure and maintained organization's web presence. 
+                        Previously served as Coordinator of Fundraising and Publication Marketing Activist.
+                      </p>
+                    </div>
+                    <div className="border-l-4 border-blue-500 pl-6 hover:border-blue-600 transition-colors duration-300 hover-lift">
+                      <h4 className="text-xl font-semibold text-slate-900 dark:text-white">ICPC Escort</h4>
+                      <p className="text-blue-600 dark:text-blue-400 font-medium">International Collegiate Programming Contest • 2024</p>
+                      <p className="text-slate-600 dark:text-slate-400 mt-2">
+                        Guided 5+ international programming contest participants using bilingual English-Mandarin communication. 
+                        Provided cross-cultural support across 2-day competition schedule.
                       </p>
                     </div>
                   </div>
@@ -143,30 +163,34 @@ export default function Home() {
                     <div>
                       <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">Frontend</h4>
                       <div className="flex flex-wrap gap-2">
-                        <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">React</span>
                         <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Next.js</span>
-                        <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">TypeScript</span>
+                        <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">React</span>
+                        <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">HTML5</span>
+                        <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">CSS3</span>
+                        <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">JavaScript</span>
                         <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Tailwind CSS</span>
-                        <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Vue.js</span>
                       </div>
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">Backend</h4>
+                      <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">Backend & Database</h4>
                       <div className="flex flex-wrap gap-2">
+                        <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Express.js</span>
                         <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Node.js</span>
-                        <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Python</span>
+                        <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Flask</span>
                         <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">PostgreSQL</span>
-                        <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">MongoDB</span>
-                        <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">GraphQL</span>
+                        <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">MinIO</span>
                       </div>
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">Tools & Cloud</h4>
+                      <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">AI/ML & Other Technologies</h4>
                       <div className="flex flex-wrap gap-2">
-                        <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">AWS</span>
-                        <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Docker</span>
-                        <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Git</span>
-                        <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Vercel</span>
+                        <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Python</span>
+                        <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">TensorFlow/Keras</span>
+                        <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">CNN, LSTM</span>
+                        <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Scikit-learn</span>
+                        <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">OpenCV</span>
+                        <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Java (OOP)</span>
+                        <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Streamlit</span>
                         <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Figma</span>
                       </div>
                     </div>
@@ -237,8 +261,8 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">Email Me</h3>
                   <p className="text-slate-600 dark:text-slate-400 mb-4">Drop me a line anytime</p>
-                  <a href="mailto:nicolas@example.com" className="text-blue-600 dark:text-blue-400 font-semibold hover:underline">
-                    nicolas@example.com
+                  <a href="mailto:nicolasmaulanass@gmail.com" className="text-blue-600 dark:text-blue-400 font-semibold hover:underline">
+                    nicolasmaulanass@gmail.com
                   </a>
                 </div>
               </AnimatedSection>
@@ -251,8 +275,8 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">Call Me</h3>
                   <p className="text-slate-600 dark:text-slate-400 mb-4">Let's have a conversation</p>
-                  <a href="tel:+15551234567" className="text-green-600 dark:text-green-400 font-semibold hover:underline">
-                    +1 (555) 123-4567
+                  <a href="tel:+6281915020705" className="text-green-600 dark:text-green-400 font-semibold hover:underline">
+                    +62 819 1502 0705
                   </a>
                 </div>
               </AnimatedSection>
@@ -265,7 +289,7 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">Visit Me</h3>
                   <p className="text-slate-600 dark:text-slate-400 mb-4">Based in</p>
-                  <p className="text-purple-600 dark:text-purple-400 font-semibold">New York, NY</p>
+                  <p className="text-purple-600 dark:text-purple-400 font-semibold">Springlake Summarecon Bekasi</p>
                 </div>
               </AnimatedSection>
             </div>
@@ -276,7 +300,9 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-8">Follow My Journey</h3>
                 <div className="flex justify-center space-x-6">
                   <a 
-                    href="#" 
+                    href="https://www.linkedin.com/in/nicolas-maulana-ss-a76690285" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="group w-14 h-14 bg-blue-600 hover:bg-blue-700 text-white rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg"
                   >
                     <span className="text-lg font-bold group-hover:scale-110 transition-transform">in</span>
@@ -288,16 +314,16 @@ export default function Home() {
                     <span className="text-lg font-bold group-hover:scale-110 transition-transform">gh</span>
                   </a>
                   <a 
-                    href="#" 
-                    className="group w-14 h-14 bg-blue-400 hover:bg-blue-500 text-white rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg"
-                  >
-                    <span className="text-lg font-bold group-hover:scale-110 transition-transform">tw</span>
-                  </a>
-                  <a 
-                    href="#" 
+                    href="mailto:nicolasmaulanass@gmail.com" 
                     className="group w-14 h-14 bg-red-600 hover:bg-red-700 text-white rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg"
                   >
-                    <span className="text-lg font-bold group-hover:scale-110 transition-transform">yt</span>
+                    <span className="text-lg font-bold group-hover:scale-110 transition-transform">@</span>
+                  </a>
+                  <a 
+                    href="tel:+6281915020705" 
+                    className="group w-14 h-14 bg-green-600 hover:bg-green-700 text-white rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                  >
+                    <span className="text-lg font-bold group-hover:scale-110 transition-transform">📱</span>
                   </a>
                 </div>
               </div>
@@ -371,7 +397,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="text-center md:text-left mb-4 md:mb-0">
                 <p className="text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors">
-                  © 2025 Nicolas Portfolio. Built with Next.js and Tailwind CSS.
+                  © 2025 Nicolas Maulana SS. Built with Next.js and Tailwind CSS.
                 </p>
               </div>
               <div className="flex space-x-6">
