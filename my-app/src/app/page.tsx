@@ -54,7 +54,7 @@ export default function Home() {
       {/* Hero/Introduction Section */}
       <section id="about" className="pt-24 pb-12 lg:pt-32 lg:pb-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
+          <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
             <AnimatedSection className="flex-1 text-center lg:text-left" animation="fade-in-left">
               <SequentialType className="block" />
               <div className="fade-in-up animate-delay-300">
