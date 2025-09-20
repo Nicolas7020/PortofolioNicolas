@@ -336,15 +336,6 @@ export default function Home() {
       <AnimatedSection>
         <section id="cv" className="py-20 bg-slate-50 dark:bg-slate-900">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white mb-4">
-                Curriculum Vitae
-              </h2>
-              <p className="text-xl text-slate-600 dark:text-slate-300">
-                Download my complete resume
-              </p>
-            </div>
-
             <AnimatedSection animation="scale-in" delay={300}>
               <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-500 hover:scale-105">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-8">
@@ -371,17 +362,12 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col space-y-4">
                     <a 
-                      href="/nicolas-cv.pdf" 
+                      href="https://drive.google.com/file/d/1MjaL4Hmia4858mINWbd1PKBIyFTHID-O/view?usp=sharing" 
                       download
                       className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-300 font-medium flex items-center space-x-2 hover:scale-105 hover:shadow-lg hover-glow"
                     >
-                      <span>📄</span>
-                      <span>Download PDF</span>
+                      <span>Download & Preview PDF</span>
                     </a>
-                    <button className="px-8 py-4 border-2 border-blue-600 text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 rounded-lg transition-all duration-300 font-medium flex items-center space-x-2 hover:scale-105 hover:shadow-lg">
-                      <span>👁️</span>
-                      <span>Preview Online</span>
-                    </button>
                   </div>
                 </div>
               </div>
