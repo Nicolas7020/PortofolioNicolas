@@ -4,7 +4,7 @@ import LogoLoop from "@/components/LogoLoop";
 import AnimatedSection from "@/components/AnimatedSection";
 import ProjectSlider from "@/components/ProjectSlider";
 import { projects } from "@/data/projects";
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiPython, SiPostgresql, SiMongodb, SiGraphql, SiAmazon, SiDocker, SiGit, SiVercel, SiFigma, SiExpress, SiFlask, SiStreamlit, SiTensorflow, SiScikitlearn, SiHtml5, SiCss3, SiJavascript } from 'react-icons/si';
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiPython, SiPostgresql, SiMongodb, SiGraphql, SiAmazon, SiDocker, SiGit, SiVercel, SiFigma, SiExpress, SiFlask, SiStreamlit, SiTensorflow, SiScikitlearn, SiHtml5, SiCss3, SiJavascript, SiGithub, SiLinkedin } from 'react-icons/si';
 
 // Tech logos for the animation
 const techLogos = [
@@ -305,25 +305,15 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className="group w-14 h-14 bg-blue-600 hover:bg-blue-700 text-white rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg"
                   >
-                    <span className="text-lg font-bold group-hover:scale-110 transition-transform">in</span>
+                    <SiLinkedin className="text-xl group-hover:scale-110 transition-transform" />
                   </a>
                   <a 
-                    href="#" 
+                    href="https://github.com/Nicolas7020" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="group w-14 h-14 bg-gray-800 hover:bg-gray-900 text-white rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg"
                   >
-                    <span className="text-lg font-bold group-hover:scale-110 transition-transform">gh</span>
-                  </a>
-                  <a 
-                    href="mailto:nicolasmaulanass@gmail.com" 
-                    className="group w-14 h-14 bg-red-600 hover:bg-red-700 text-white rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg"
-                  >
-                    <span className="text-lg font-bold group-hover:scale-110 transition-transform">@</span>
-                  </a>
-                  <a 
-                    href="tel:+6281915020705" 
-                    className="group w-14 h-14 bg-green-600 hover:bg-green-700 text-white rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg"
-                  >
-                    <span className="text-lg font-bold group-hover:scale-110 transition-transform">📱</span>
+                    <SiGithub className="text-xl group-hover:scale-110 transition-transform" />
                   </a>
                 </div>
               </div>
