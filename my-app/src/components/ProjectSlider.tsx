@@ -79,7 +79,7 @@ export default function ProjectSlider({
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Main slider container */}
-      <div className="relative overflow-hidden rounded-xl">
+      <div className="relative overflow-hidden rounded-xl mx-4 md:mx-0">
         <div 
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -87,7 +87,7 @@ export default function ProjectSlider({
           {projects.map((project, index) => (
             <div 
               key={index} 
-              className="w-full flex-shrink-0 px-4"
+              className="w-full flex-shrink-0 px-2 md:px-4"
             >
               <div className="max-w-md mx-auto">
                 <ProjectCard
@@ -110,18 +110,18 @@ export default function ProjectSlider({
         <>
           <button
             onClick={goToPrevious}
-            className="absolute left-2 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl hover:bg-white dark:hover:bg-slate-700 transition-all duration-300 flex items-center justify-center group hover:scale-110"
+            className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl hover:bg-white dark:hover:bg-slate-700 transition-all duration-300 flex items-center justify-center group hover:scale-110 -translate-x-2 md:translate-x-0"
             aria-label="Previous project"
           >
-            <ChevronLeftIcon className="w-6 h-6 text-slate-700 dark:text-slate-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
+            <ChevronLeftIcon className="w-5 h-5 md:w-6 md:h-6 text-slate-700 dark:text-slate-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
           </button>
 
           <button
             onClick={goToNext}
-            className="absolute right-2 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl hover:bg-white dark:hover:bg-slate-700 transition-all duration-300 flex items-center justify-center group hover:scale-110"
+            className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl hover:bg-white dark:hover:bg-slate-700 transition-all duration-300 flex items-center justify-center group hover:scale-110 translate-x-2 md:translate-x-0"
             aria-label="Next project"
           >
-            <ChevronRightIcon className="w-6 h-6 text-slate-700 dark:text-slate-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
+            <ChevronRightIcon className="w-5 h-5 md:w-6 md:h-6 text-slate-700 dark:text-slate-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
           </button>
         </>
       )}
