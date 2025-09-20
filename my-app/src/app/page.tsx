@@ -2,6 +2,8 @@ import Image from "next/image";
 import SequentialType from "@/components/SequentialType";
 import LogoLoop from "@/components/LogoLoop";
 import AnimatedSection from "@/components/AnimatedSection";
+import ProjectSlider from "@/components/ProjectSlider";
+import { projects } from "@/data/projects";
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiPython, SiPostgresql, SiMongodb, SiGraphql, SiAmazon, SiDocker, SiGit, SiVercel, SiFigma } from 'react-icons/si';
 
 // Tech logos for the animation
@@ -202,82 +204,13 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Project 1 */}
-              <AnimatedSection animation="fade-in-up" delay={200}>
-                <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden hover:scale-105 hover-lift">
-                  <div className="h-48 bg-gradient-to-br from-blue-400 to-purple-600 flex items-center justify-center relative overflow-hidden">
-                    <div className="text-white text-4xl hover:scale-110 transition-transform duration-300">🚀</div>
-                    <div className="absolute inset-0 bg-black opacity-0 hover:opacity-10 transition-opacity duration-300"></div>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">E-Commerce Platform</h3>
-                    <p className="text-slate-600 dark:text-slate-400 mb-4">
-                      A full-stack e-commerce solution built with Next.js, featuring payment integration and admin dashboard.
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      <span className="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded text-xs hover:scale-105 transition-transform">Next.js</span>
-                      <span className="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded text-xs hover:scale-105 transition-transform">Stripe</span>
-                      <span className="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded text-xs hover:scale-105 transition-transform">PostgreSQL</span>
-                    </div>
-                    <div className="flex space-x-4">
-                      <a href="#" className="text-blue-600 dark:text-blue-400 hover:underline hover:scale-105 transition-all duration-200">Live Demo</a>
-                      <a href="#" className="text-blue-600 dark:text-blue-400 hover:underline hover:scale-105 transition-all duration-200">GitHub</a>
-                    </div>
-                  </div>
-                </div>
-              </AnimatedSection>
-
-              {/* Project 2 */}
-              <AnimatedSection animation="fade-in-up" delay={400}>
-                <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden hover:scale-105 hover-lift">
-                  <div className="h-48 bg-gradient-to-br from-green-400 to-blue-600 flex items-center justify-center relative overflow-hidden">
-                    <div className="text-white text-4xl hover:scale-110 transition-transform duration-300">📱</div>
-                    <div className="absolute inset-0 bg-black opacity-0 hover:opacity-10 transition-opacity duration-300"></div>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Task Management App</h3>
-                    <p className="text-slate-600 dark:text-slate-400 mb-4">
-                      A collaborative task management application with real-time updates and team collaboration features.
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      <span className="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded text-xs hover:scale-105 transition-transform">React</span>
-                      <span className="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded text-xs hover:scale-105 transition-transform">Socket.io</span>
-                      <span className="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded text-xs hover:scale-105 transition-transform">Node.js</span>
-                    </div>
-                    <div className="flex space-x-4">
-                      <a href="#" className="text-blue-600 dark:text-blue-400 hover:underline hover:scale-105 transition-all duration-200">Live Demo</a>
-                      <a href="#" className="text-blue-600 dark:text-blue-400 hover:underline hover:scale-105 transition-all duration-200">GitHub</a>
-                    </div>
-                  </div>
-                </div>
-              </AnimatedSection>
-
-              {/* Project 3 */}
-              <AnimatedSection animation="fade-in-up" delay={600}>
-                <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden hover:scale-105 hover-lift">
-                  <div className="h-48 bg-gradient-to-br from-purple-400 to-pink-600 flex items-center justify-center relative overflow-hidden">
-                    <div className="text-white text-4xl hover:scale-110 transition-transform duration-300">🎨</div>
-                    <div className="absolute inset-0 bg-black opacity-0 hover:opacity-10 transition-opacity duration-300"></div>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Design System</h3>
-                    <p className="text-slate-600 dark:text-slate-400 mb-4">
-                      A comprehensive design system and component library for consistent UI development across projects.
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      <span className="px-2 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded text-xs hover:scale-105 transition-transform">Storybook</span>
-                      <span className="px-2 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded text-xs hover:scale-105 transition-transform">TypeScript</span>
-                      <span className="px-2 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded text-xs hover:scale-105 transition-transform">Tailwind</span>
-                    </div>
-                    <div className="flex space-x-4">
-                      <a href="#" className="text-blue-600 dark:text-blue-400 hover:underline hover:scale-105 transition-all duration-200">Live Demo</a>
-                      <a href="#" className="text-blue-600 dark:text-blue-400 hover:underline hover:scale-105 transition-all duration-200">GitHub</a>
-                    </div>
-                  </div>
-                </div>
-              </AnimatedSection>
-            </div>
+            <AnimatedSection animation="fade-in-up" delay={200}>
+              <ProjectSlider 
+                projects={projects} 
+                autoPlayInterval={5000}
+                className="max-w-4xl mx-auto"
+              />
+            </AnimatedSection>
           </div>
         </section>
       </AnimatedSection>
