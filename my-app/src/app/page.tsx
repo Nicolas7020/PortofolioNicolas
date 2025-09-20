@@ -5,6 +5,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 import ProjectSlider from "@/components/ProjectSlider";
 import { projects } from "@/data/projects";
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiPython, SiPostgresql, SiMongodb, SiGraphql, SiAmazon, SiDocker, SiGit, SiVercel, SiFigma, SiExpress, SiFlask, SiStreamlit, SiTensorflow, SiScikitlearn, SiHtml5, SiCss3, SiJavascript, SiGithub, SiLinkedin } from 'react-icons/si';
+import { HiMail, HiPhone, HiLocationMarker } from 'react-icons/hi';
 
 // Tech logos for the animation
 const techLogos = [
@@ -241,81 +242,111 @@ export default function Home() {
 
       {/* Contact Section */}
       <AnimatedSection>
-        <section id="contact" className="py-20 bg-white dark:bg-slate-800">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white mb-4">
-                Get In Touch
-              </h2>
-              <p className="text-xl text-slate-600 dark:text-slate-300">
-                Let's connect and discuss opportunities together
-              </p>
-            </div>
+        <section id="contact" className="py-20 bg-white dark:bg-slate-800 relative overflow-hidden">
+          {/* Background Decoration */}
+          <div className="absolute inset-0 opacity-5">
+            <div className="absolute top-10 left-10 w-32 h-32 bg-blue-500 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-10 right-10 w-40 h-40 bg-purple-500 rounded-full blur-3xl"></div>
+          </div>
+          
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-              {/* Email Contact */}
-              <AnimatedSection animation="fade-in-up" delay={200}>
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-2xl p-8 text-center hover:shadow-lg transition-all duration-300 hover:scale-105">
-                  <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-white text-2xl">📧</span>
+            {/* Main Contact Card */}
+            <AnimatedSection animation="fade-in-up" delay={200}>
+              <div className="max-w-4xl mx-auto mb-16">
+                <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-slate-700 dark:to-slate-600 rounded-3xl p-8 lg:p-12 shadow-xl border border-blue-100 dark:border-slate-600">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    {/* Left side - Text content */}
+                    <div className="text-center lg:text-left">
+                      <h3 className="text-2xl lg:text-3xl font-bold text-slate-900 dark:text-white mb-4">
+                        Ready to Start a Project?
+                      </h3>
+                      <p className="text-slate-600 dark:text-slate-300 mb-6 text-lg">
+                        Drop me a message and let's discuss how we can turn your vision into reality.
+                      </p>
+        
+                    </div>
+
+                    {/* Right side - Contact info */}
+                    <div className="space-y-4">
+                      <div className="bg-white dark:bg-slate-800 rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow">
+                        <div className="flex items-center space-x-3">
+                          <div className="w-10 h-10 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center">
+                            <HiMail className="text-blue-600 dark:text-blue-400 text-xl" />
+                          </div>
+                          <div>
+                            <p className="text-sm text-slate-500 dark:text-slate-400">Email</p>
+                            <p className="font-semibold text-slate-900 dark:text-white">nicolasmaulanass@gmail.com</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="bg-white dark:bg-slate-800 rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow">
+                        <div className="flex items-center space-x-3">
+                          <div className="w-10 h-10 bg-slate-100 dark:bg-blue-900 rounded-lg flex items-center justify-center">
+                            <HiPhone className="text-blue-600 dark:text-blue-400 text-xl" />
+                          </div>
+                          <div>
+                            <p className="text-smtext-blue-600 dark:text-blue-400">Phone</p>
+                            <p className="font-semibold text-slate-900 dark:text-white">+62 819 1502 0705</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="bg-white dark:bg-slate-800 rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow">
+                        <div className="flex items-center space-x-3">
+                          <div className="w-10 h-10 bg-slate-100 dark:bg-blue-900 rounded-lg flex items-center justify-center">
+                            <HiLocationMarker className="text-blue-600 dark:text-blue-400 text-xl" />
+                          </div>
+                          <div>
+                            <p className="text-sm text-slate-500 dark:text-slate-400">Location</p>
+                            <p className="font-semibold text-slate-900 dark:text-white">Jabodetabek</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">Email Me</h3>
-                  <p className="text-slate-600 dark:text-slate-400 mb-4">Drop me a line anytime</p>
-                  <a href="mailto:nicolasmaulanass@gmail.com" className="text-blue-600 dark:text-blue-400 font-semibold hover:underline">
-                    nicolasmaulanass@gmail.com
-                  </a>
                 </div>
-              </AnimatedSection>
+              </div>
+            </AnimatedSection>
 
-              {/* Phone Contact */}
-              <AnimatedSection animation="fade-in-up" delay={400}>
-                <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 rounded-2xl p-8 text-center hover:shadow-lg transition-all duration-300 hover:scale-105">
-                  <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-white text-2xl">📱</span>
-                  </div>
-                  <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">Call Me</h3>
-                  <p className="text-slate-600 dark:text-slate-400 mb-4">Let's have a conversation</p>
-                  <a href="tel:+6281915020705" className="text-green-600 dark:text-green-400 font-semibold hover:underline">
-                    +62 819 1502 0705
-                  </a>
-                </div>
-              </AnimatedSection>
-
-              {/* Location */}
-              <AnimatedSection animation="fade-in-up" delay={600}>
-                <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 rounded-2xl p-8 text-center hover:shadow-lg transition-all duration-300 hover:scale-105">
-                  <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-white text-2xl">📍</span>
-                  </div>
-                  <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">Visit Me</h3>
-                  <p className="text-slate-600 dark:text-slate-400 mb-4">Based in</p>
-                  <p className="text-purple-600 dark:text-purple-400 font-semibold">Springlake Summarecon Bekasi</p>
-                </div>
-              </AnimatedSection>
-            </div>
-
-            {/* Social Media Links */}
-            <AnimatedSection animation="fade-in-up" delay={800}>
+            {/* Social Media & Additional Info */}
+            <AnimatedSection animation="fade-in-up" delay={400}>
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-8">Follow My Journey</h3>
-                <div className="flex justify-center space-x-6">
+                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-6">
+                  Connect with me on social media
+                </h3>
+                <div className="flex justify-center items-center space-x-6 mb-8">
                   <a 
                     href="https://www.linkedin.com/in/nicolas-maulana-ss-a76690285" 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group w-14 h-14 bg-blue-600 hover:bg-blue-700 text-white rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                    className="group relative"
                   >
-                    <SiLinkedin className="text-xl group-hover:scale-110 transition-transform" />
+                    <div className="w-16 h-16 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-600/25">
+                      <SiLinkedin className="text-2xl group-hover:scale-110 transition-transform" />
+                    </div>
+                    <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs text-slate-600 dark:text-slate-400 opacity-0 group-hover:opacity-100 transition-opacity">
+                      LinkedIn
+                    </span>
                   </a>
                   <a 
                     href="https://github.com/Nicolas7020" 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group w-14 h-14 bg-gray-800 hover:bg-gray-900 text-white rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                    className="group relative"
                   >
-                    <SiGithub className="text-xl group-hover:scale-110 transition-transform" />
+                    <div className="w-16 h-16 bg-gray-800 hover:bg-gray-900 text-white rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-gray-800/25">
+                      <SiGithub className="text-2xl group-hover:scale-110 transition-transform" />
+                    </div>
+                    <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs text-slate-600 dark:text-slate-400 opacity-0 group-hover:opacity-100 transition-opacity">
+                      GitHub
+                    </span>
                   </a>
                 </div>
+                <p className="text-slate-500 dark:text-slate-400 text-sm">
+                  Available for freelance work and full-time opportunities
+                </p>
               </div>
             </AnimatedSection>
           </div>
