@@ -63,7 +63,6 @@ export const projects: Project[] = [
     technologies: ["Frontend Stack", "Payment Integration", "Team Management"],
     imageUrl: "image7.png",
     liveUrl: "https://burncup.com",
-    githubUrl: "#",
     gradient: "bg-gradient-to-br from-purple-400 to-pink-600"
   }
 ];
