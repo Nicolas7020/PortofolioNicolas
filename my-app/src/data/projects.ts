@@ -54,7 +54,7 @@ export const projects: Project[] = [
     description: "LSTM deep learning model for stock price prediction with web application interface. Features hyperparameter tuning, model optimization, and interactive visualization of predictions.",
     technologies: ["Python", "LSTM", "Flask", "HTML/CSS", "JavaScript"],
     imageUrl: "image6.png",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Nicolas7020/StockPredict",
     gradient: "bg-gradient-to-br from-yellow-400 to-orange-600"
   },
   {
