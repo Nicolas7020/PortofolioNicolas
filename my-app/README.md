@@ -108,4 +108,4 @@ This project is open source and available under the MIT License.
 
 ---
 
-Built with ❤️ using Next.js and Tailwind CSS
+Built with using Next.js and Tailwind CSS
