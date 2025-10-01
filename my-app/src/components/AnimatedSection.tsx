@@ -12,7 +12,7 @@ interface AnimatedSectionProps {
 
 const AnimatedSection = ({ 
   children, 
-  className = '', 
+  className = '',  
   animation = 'fade-in-up',
   delay = 0
 }: AnimatedSectionProps) => {
