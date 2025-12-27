@@ -254,7 +254,7 @@ export default function Home() {
                         Ready to Start a Project?
                       </h3>
                       <p className="text-slate-600 dark:text-slate-300 mb-6 text-lg">
-                        Drop me a message and let's discuss how we can turn your vision into reality.
+                        Drop me a message and let's discuss.
                       </p>
         
                     </div>
@@ -355,7 +355,7 @@ export default function Home() {
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">My Resume</h3>
                     <p className="text-slate-600 dark:text-slate-400 mb-6">
-                      Get a comprehensive overview of my experience, education, and skills in a downloadable PDF format. 
+                      Get a overview of my experience, education, and skills in a downloadable PDF format. 
                       My resume includes detailed information about my professional journey, technical expertise, and achievements.
                     </p>
               

@@ -50,7 +50,7 @@ export default function ProjectCard({
               rel="noopener noreferrer"
               className="text-blue-600 dark:text-blue-400 hover:underline font-medium transition-colors"
             >
-              Live Demo
+              Live Here
             </a>
           )}
           {githubUrl && (
