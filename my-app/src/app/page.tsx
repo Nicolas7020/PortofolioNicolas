@@ -362,7 +362,7 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col space-y-4">
                     <a 
-                      href="https://drive.google.com/file/d/1MjaL4Hmia4858mINWbd1PKBIyFTHID-O/view?usp=sharing" 
+                      href="https://drive.google.com/file/d/1eKlbiAwvMxuB0uZaFeRq_pP0QtiOYOq2/view?usp=sharing" 
                       download
                       className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-300 font-medium flex items-center space-x-2 hover:scale-105 hover:shadow-lg hover-glow"
                     >
