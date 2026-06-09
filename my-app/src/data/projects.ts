@@ -10,6 +10,14 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "MidHub.ID",
+    description: "Indonesia's integrated digital ecosystem for heavy equipment, connecting buyers and sellers across the construction and industrial sectors. Built the entire web frontend from scratch, shipping 15+ feature modules including authentication, equipment listings, real-time chat, advanced search & filtering, Midtrans payments, and full EN/ID bilingual support.",
+    technologies: ["Next.js", "React 19", "TypeScript", "Tailwind CSS", "Socket.IO", "Midtrans"],
+    imageUrl: "image8.png",
+    liveUrl: "https://midhub.id",
+    gradient: "bg-gradient-to-br from-amber-400 to-blue-700"
+  },
+  {
     title: "Donation Tracker",
     description: "A full-stack donation management platform facilitating transparent connections between donors and recipients. Features user registration, verification, donation forms, real-time monitoring, and comprehensive dashboards.",
     technologies: ["Next.js", "Express.js", "PostgreSQL", "MinIO", "Tailwind CSS"],

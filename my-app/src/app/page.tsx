@@ -61,22 +61,22 @@ export default function Home() {
               <SequentialType className="block" />
               <div className="fade-in-up animate-delay-300">
                 <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
-                  Computer Science - Software Engineering student at BINUS University and Software Engineer at MidHub.ID, 
-                  where I built Indonesia's heavy equipment marketplace frontend from the ground up. Passionate Full Stack Developer 
-                  & AI Enthusiast with hands-on experience across frontend, backend, and mobile technologies. Active in HIMTI as a Web Developer 
+                  Computer Science - Software Engineering student at BINUS University and Software Engineer at MidHub.ID,
+                  where I built Indonesia's heavy equipment marketplace frontend from the ground up. Passionate Full Stack Developer
+                  & AI Enthusiast with hands-on experience across frontend, backend, and mobile technologies. Active in HIMTI as a Web Developer
                   and campus event organizer. Always eager to learn new technologies and solve real-world problems through innovative solutions.
                 </p>
               </div>
               <div className="fade-in-up animate-delay-500">
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                  <a 
-                    href="#contact" 
+                  <a
+                    href="#contact"
                     className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-300 text-center hover:scale-105 hover:shadow-lg hover-glow pulse-slow"
                   >
                     Get In Touch
                   </a>
-                  <a 
-                    href="#projects" 
+                  <a
+                    href="#projects"
                     className="px-8 py-3 border-2 border-blue-600 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-300 text-center hover:scale-105 hover:shadow-lg"
                   >
                     View My Work
@@ -274,8 +274,8 @@ export default function Home() {
             </div>
 
             <AnimatedSection animation="fade-in-up" delay={200}>
-              <ProjectSlider 
-                projects={projects} 
+              <ProjectSlider
+                projects={projects}
                 autoPlayInterval={5000}
                 className="max-w-4xl mx-auto"
               />
@@ -292,7 +292,7 @@ export default function Home() {
             <div className="absolute top-10 left-10 w-32 h-32 bg-blue-500 rounded-full blur-3xl"></div>
             <div className="absolute bottom-10 right-10 w-40 h-40 bg-purple-500 rounded-full blur-3xl"></div>
           </div>
-          
+
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
             {/* Main Contact Card */}
@@ -308,7 +308,7 @@ export default function Home() {
                       <p className="text-slate-600 dark:text-slate-300 mb-6 text-lg">
                         Drop me a message and let's discuss.
                       </p>
-        
+
                     </div>
 
                     {/* Right side - Contact info */}
@@ -361,8 +361,8 @@ export default function Home() {
                   Connect with me on social media
                 </h3>
                 <div className="flex justify-center items-center space-x-6 mb-8">
-                  <a 
-                    href="https://www.linkedin.com/in/nicolas-maulana-ss-a76690285" 
+                  <a
+                    href="https://www.linkedin.com/in/nicolas-maulana-ss-a76690285"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group relative"
@@ -374,8 +374,8 @@ export default function Home() {
                       LinkedIn
                     </span>
                   </a>
-                  <a 
-                    href="https://github.com/Nicolas7020" 
+                  <a
+                    href="https://github.com/Nicolas7020"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group relative"
@@ -407,14 +407,14 @@ export default function Home() {
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">My Resume</h3>
                     <p className="text-slate-600 dark:text-slate-400 mb-6">
-                      Get a overview of my experience, education, and skills in a downloadable PDF format. 
+                      Get a overview of my experience, education, and skills in a downloadable PDF format.
                       My resume includes detailed information about my professional journey, technical expertise, and achievements.
                     </p>
-              
+
                   </div>
                   <div className="flex flex-col space-y-4">
-                    <a 
-                      href="https://drive.google.com/file/d/1eKlbiAwvMxuB0uZaFeRq_pP0QtiOYOq2/view?usp=sharing" 
+                    <a
+                      href="https://drive.google.com/file/d/1eKlbiAwvMxuB0uZaFeRq_pP0QtiOYOq2/view?usp=sharing"
                       download
                       className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-300 font-medium flex items-center space-x-2 hover:scale-105 hover:shadow-lg hover-glow"
                     >
