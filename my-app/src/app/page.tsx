@@ -4,7 +4,7 @@ import LogoLoop from "@/components/LogoLoop";
 import AnimatedSection from "@/components/AnimatedSection";
 import ProjectSlider from "@/components/ProjectSlider";
 import { projects } from "@/data/projects";
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiPython, SiPostgresql, SiMongodb, SiGraphql, SiAmazon, SiDocker, SiGit, SiVercel, SiFigma, SiExpress, SiFlask, SiStreamlit, SiTensorflow, SiScikitlearn, SiHtml5, SiCss3, SiJavascript, SiGithub, SiLinkedin } from 'react-icons/si';
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiPython, SiPostgresql, SiMongodb, SiGraphql, SiAmazon, SiDocker, SiGit, SiVercel, SiFigma, SiExpress, SiFlask, SiStreamlit, SiTensorflow, SiScikitlearn, SiHtml5, SiCss3, SiJavascript, SiGithub, SiLinkedin, SiFlutter, SiSocketdotio } from 'react-icons/si';
 import { HiMail, HiPhone, HiLocationMarker } from 'react-icons/hi';
 
 // Tech logos for the animation
@@ -18,6 +18,8 @@ const techLogos = [
   { node: <SiTailwindcss className="text-cyan-500" />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
   { node: <SiNodedotjs className="text-green-600" />, title: "Node.js", href: "https://nodejs.org" },
   { node: <SiExpress className="text-gray-700 dark:text-gray-300" />, title: "Express.js", href: "https://expressjs.com" },
+  { node: <SiSocketdotio className="text-black dark:text-white" />, title: "Socket.IO", href: "https://socket.io" },
+  { node: <SiFlutter className="text-sky-400" />, title: "Flutter", href: "https://flutter.dev" },
   { node: <SiPython className="text-yellow-500" />, title: "Python", href: "https://python.org" },
   { node: <SiFlask className="text-black dark:text-white" />, title: "Flask", href: "https://flask.palletsprojects.com" },
   { node: <SiStreamlit className="text-red-500" />, title: "Streamlit", href: "https://streamlit.io" },
@@ -59,9 +61,10 @@ export default function Home() {
               <SequentialType className="block" />
               <div className="fade-in-up animate-delay-300">
                 <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
-                  5th Semester Computer Science - Software Engineering Student at BINUS University. Passionate Full Stack Developer & AI Enthusiast 
-                  with hands-on experience in both frontend and backend technologies. Active member of HIMTI, campus event organizer, and Freshmen Partner. 
-                  Always eager to learn new technologies and solve real-world problems through innovative solutions.
+                  Computer Science - Software Engineering student at BINUS University and Software Engineer at MidHub.ID, 
+                  where I built Indonesia's heavy equipment marketplace frontend from the ground up. Passionate Full Stack Developer 
+                  & AI Enthusiast with hands-on experience across frontend, backend, and mobile technologies. Active in HIMTI as a Web Developer 
+                  and campus event organizer. Always eager to learn new technologies and solve real-world problems through innovative solutions.
                 </p>
               </div>
               <div className="fade-in-up animate-delay-500">
@@ -110,13 +113,44 @@ export default function Home() {
                 Education & Experience
               </h2>
               <p className="text-xl text-slate-600 dark:text-slate-300">
-                My academic journey and organizational involvement
+                My professional journey, academic background, and organizational involvement
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              {/* Work Experience */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+              {/* Professional Experience */}
               <AnimatedSection animation="fade-in-left" delay={200}>
+                <div>
+                  <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-8">Professional Experience</h3>
+                  <div className="space-y-8">
+                    <div className="border-l-4 border-blue-500 pl-6 hover:border-blue-600 transition-colors duration-300 hover-lift">
+                      <h4 className="text-xl font-semibold text-slate-900 dark:text-white">Software Engineer</h4>
+                      <p className="text-blue-600 dark:text-blue-400 font-medium">MIDHUB · Full-time • Nov 2025 - Present</p>
+                      <p className="text-sm text-slate-500 dark:text-slate-400">Jakarta, Indonesia · Hybrid</p>
+                      <p className="text-slate-600 dark:text-slate-400 mt-2">
+                        Built MidHub.ID's web frontend from the ground up — Indonesia's heavy equipment marketplace connecting buyers and sellers across the construction and industrial sectors.
+                      </p>
+                      <ul className="list-disc list-outside ml-5 mt-3 space-y-1.5 text-sm text-slate-600 dark:text-slate-400">
+                        <li>Architected and delivered the entire Next.js (React 19, TypeScript, Tailwind CSS) application from scratch, shipping 15+ feature modules including authentication, equipment listings, real-time chat (Socket.IO), advanced search & filtering, and Midtrans payment integration.</li>
+                        <li>Designed the platform's initial UI/UX and the core equipment card system used across the marketplace.</li>
+                        <li>Built a reusable component library from scratch and implemented full EN/ID bilingual support with next-intl.</li>
+                        <li>Configured staging & production deployments and contributed to the companion Flutter mobile app.</li>
+                      </ul>
+                    </div>
+                    <div className="border-l-4 border-blue-500 pl-6 hover:border-blue-600 transition-colors duration-300 hover-lift">
+                      <h4 className="text-xl font-semibold text-slate-900 dark:text-white">Software Engineer</h4>
+                      <p className="text-blue-600 dark:text-blue-400 font-medium">PT. Uniteda Arkato · Freelance • Jun 2025 - Nov 2025</p>
+                      <p className="text-sm text-slate-500 dark:text-slate-400">Jakarta Metropolitan Area · Remote</p>
+                      <p className="text-slate-600 dark:text-slate-400 mt-2">
+                        Worked on a heavy equipment marketplace platform as a UI/UX designer and developer using Next.js and Flutter.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </AnimatedSection>
+
+              {/* Education & Organization */}
+              <AnimatedSection animation="fade-in-right" delay={400}>
                 <div>
                   <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-8">Education & Organization</h3>
                   <div className="space-y-8">
@@ -124,73 +158,91 @@ export default function Home() {
                       <h4 className="text-xl font-semibold text-slate-900 dark:text-white">Bachelor in Computer Science</h4>
                       <p className="text-blue-600 dark:text-blue-400 font-medium">BINUS University • 2023 - Present</p>
                       <p className="text-slate-600 dark:text-slate-400 mt-2">
-                        Software Engineering student with strong technical foundations in full stack development. 
-                        Currently in fifth semester with hands-on experience in academic and personal projects.
+                        Software Engineering student with strong technical foundations in full stack development, building real-world products alongside academic and personal projects.
+                      </p>
+                    </div>
+                    <div className="border-l-4 border-blue-500 pl-6 hover:border-blue-600 transition-colors duration-300 hover-lift">
+                      <h4 className="text-xl font-semibold text-slate-900 dark:text-white">Web Developer Activist</h4>
+                      <p className="text-blue-600 dark:text-blue-400 font-medium">HIMTI BINUS University • Mar 2025 - Feb 2026</p>
+                      <p className="text-slate-600 dark:text-slate-400 mt-2">
+                        Developed and maintained the organization's web presence and digital infrastructure. Previously served across the Events, Publication & Marketing, and Fundraising divisions over 2+ years as a HIMTI activist.
+                      </p>
+                    </div>
+                    <div className="border-l-4 border-blue-500 pl-6 hover:border-blue-600 transition-colors duration-300 hover-lift">
+                      <h4 className="text-xl font-semibold text-slate-900 dark:text-white">BurnCup 2025 Competition Coordinator</h4>
+                      <p className="text-blue-600 dark:text-blue-400 font-medium">BINUS University • Apr 2025 - Oct 2025</p>
+                      <p className="text-slate-600 dark:text-slate-400 mt-2">
+                        Led a team of 4 core members and 20 liaison officers to design and execute ~16 competitions over 5 days at BurnCup, an annual campus sports and creative festival — managing tournament structures, logistics, referees, and on-site operations.
                       </p>
                     </div>
                     <div className="border-l-4 border-blue-500 pl-6 hover:border-blue-600 transition-colors duration-300 hover-lift">
                       <h4 className="text-xl font-semibold text-slate-900 dark:text-white">Freshmen Partner</h4>
                       <p className="text-blue-600 dark:text-blue-400 font-medium">BINUS University • Sep 2024 - May 2025</p>
                       <p className="text-slate-600 dark:text-slate-400 mt-2">
-                        Provided guidance to first-year students, helping them navigate and adapt to university life over the course of one year. 
-                        Focused on supporting their academic and personal development, ensuring a smooth transition into higher education.
+                        Provided guidance to first-year students, supporting their academic and personal development for a smooth transition into university life.
                       </p>
-                    </div>
-                    <div className="border-l-4 border-blue-500 pl-6 hover:border-blue-600 transition-colors duration-300 hover-lift">
-                      <h4 className="text-xl font-semibold text-slate-900 dark:text-white">Activist</h4>
-                      <p className="text-blue-600 dark:text-blue-400 font-medium">HIMTI • Jan 2024 - Present</p>
-                      <p className="text-slate-600 dark:text-slate-400 mt-2">
-                        Developed digital infrastructure and maintained organization's web presence. 
-                        Previously served as Coordinator of Fundraising and Publication Marketing Activist.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </AnimatedSection>
-
-              {/* Skills */}
-              <AnimatedSection animation="fade-in-right" delay={400}>
-                <div>
-                  <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-8">Technical Skills</h3>
-                  <div className="space-y-6">
-                    <div>
-                      <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">Frontend</h4>
-                      <div className="flex flex-wrap gap-2">
-                        <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Next.js</span>
-                        <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">React</span>
-                        <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">HTML5</span>
-                        <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">CSS3</span>
-                        <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">JavaScript</span>
-                        <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Tailwind CSS</span>
-                      </div>
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">Backend & Database</h4>
-                      <div className="flex flex-wrap gap-2">
-                        <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Express.js</span>
-                        <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Node.js</span>
-                        <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Flask</span>
-                        <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">PostgreSQL</span>
-                        <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">MinIO</span>
-                      </div>
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">AI/ML & Other Technologies</h4>
-                      <div className="flex flex-wrap gap-2">
-                        <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Python</span>
-                        <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">TensorFlow/Keras</span>
-                        <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">CNN, LSTM</span>
-                        <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Scikit-learn</span>
-                        <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">OpenCV</span>
-                        <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Java (OOP)</span>
-                        <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Streamlit</span>
-                        <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Figma</span>
-                      </div>
                     </div>
                   </div>
                 </div>
               </AnimatedSection>
             </div>
+
+            {/* Technical Skills */}
+            <AnimatedSection animation="fade-in-up" delay={200}>
+              <div>
+                <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-8 text-center">Technical Skills</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  <div>
+                    <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">Frontend</h4>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Next.js</span>
+                      <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">React 19</span>
+                      <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">TypeScript</span>
+                      <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Tailwind CSS</span>
+                      <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">JavaScript</span>
+                      <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Zustand</span>
+                      <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">HTML5</span>
+                      <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">CSS3</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">Backend & Real-time</h4>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Node.js</span>
+                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Express.js</span>
+                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Flask</span>
+                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">PostgreSQL</span>
+                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Socket.IO</span>
+                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">MinIO</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">Mobile & Tools</h4>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Flutter</span>
+                      <span className="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Midtrans</span>
+                      <span className="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">next-intl</span>
+                      <span className="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Git</span>
+                      <span className="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Figma</span>
+                      <span className="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Vercel</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">AI/ML & More</h4>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Python</span>
+                      <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">TensorFlow/Keras</span>
+                      <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Scikit-learn</span>
+                      <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">OpenCV</span>
+                      <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">CNN</span>
+                      <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">LSTM</span>
+                      <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Streamlit</span>
+                      <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer">Java (OOP)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </AnimatedSection>
             <AnimatedSection delay={600}>
               <div className="relative h-24 overflow-hidden mt-20">
                 <LogoLoop
