@@ -1,33 +1,42 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Bricolage_Grotesque, Public_Sans, Caveat } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const displayFont = Bricolage_Grotesque({
+  variable: "--font-display",
   subsets: ["latin"],
+  weight: ["600", "700", "800"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const sansFont = Public_Sans({
+  variable: "--font-sans",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const handFont = Caveat({
+  variable: "--font-hand",
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "Nicolas Portfolio | Full Stack Developer",
-  description: "Professional portfolio of Nicolas, a passionate Full Stack Developer specializing in React, Next.js, and modern web technologies. Explore my projects, experience, and skills.",
-  keywords: ["Nicolas", "Portfolio", "Full Stack Developer", "React", "Next.js", "TypeScript", "Web Development"],
-  authors: [{ name: "Nicolas" }],
-  creator: "Nicolas",
+  title: "Nicolas Maulana | Frontend Developer",
+  description:
+    "Portfolio of Nicolas Maulana SS - Frontend Developer & Mobile Dev. CS student at BINUS University and Software Engineer at MidHub.ID, building Indonesia's heavy equipment marketplace frontend from the ground up.",
+  keywords: ["Nicolas Maulana", "Portfolio", "Frontend Developer", "Mobile Developer", "React", "Next.js", "TypeScript", "Web Development"],
+  authors: [{ name: "Nicolas Maulana SS" }],
+  creator: "Nicolas Maulana SS",
   openGraph: {
-    title: "Nicolas Portfolio | Full Stack Developer",
-    description: "Professional portfolio showcasing expertise in modern web development technologies",
+    title: "Nicolas Maulana | Frontend Developer",
+    description: "Portfolio of Nicolas Maulana SS - Frontend Developer & Mobile Dev building real products with Next.js, Flutter, and ML.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nicolas Portfolio | Full Stack Developer",
-    description: "Professional portfolio showcasing expertise in modern web development technologies",
+    title: "Nicolas Maulana | Frontend Developer",
+    description: "Portfolio of Nicolas Maulana SS - Frontend Developer & Mobile Dev building real products with Next.js, Flutter, and ML.",
   },
   robots: {
     index: true,
@@ -47,9 +56,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${displayFont.variable} ${sansFont.variable} ${handFont.variable} antialiased`}>
         {children}
       </body>
     </html>
